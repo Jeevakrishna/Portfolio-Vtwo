@@ -3,7 +3,7 @@ export const siteMetadata = {
   author: "JeevaKrishna",
   headerTitle: "JeevaKrishna's Portfolio",
   description:
-    "I'm JeevaKrishna, a senior front-end engineer, blogger and international speaker. Welcome to my corner of the internet!",
+    "I'm Jeevakrishna ,a developer, designer, engineer, and artist who thrives on turning ideas into real, working products.!",
   language: "en-us",
   siteUrl: "https://jeevakrishna.dev",
   siteRepo: "https://github.com/jeevakrishna",
@@ -24,3 +24,4 @@ export const siteMetadata = {
     plausibleDataDomain: "jeevakrishna.dev",
   },
 };
+
