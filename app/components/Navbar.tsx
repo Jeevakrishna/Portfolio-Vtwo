@@ -64,9 +64,9 @@ function DesktopNav() {
           <Image
             src="/jeeva.png"
             alt="JeevaKrishna's Logo"
-            width={10}
-            height={10}
-            className="h-10 w-10"
+            width={20}
+            height={20}
+            className="h-20 w-20"
           />
         </Link>
       </div>
@@ -157,11 +157,11 @@ const NavLogo: React.FC<NavLogoProps> = ({ onClickCallback }) => {
   return (
     <Link href="/" onClick={() => onClickCallback(false)} aria-label="Home">
       <Image
-        src="/JKlogo.svg"
+        src="/jeeva.png"
         alt="JeevaKrishna's Logo"
-        width={16}
-        height={16}
-        className="h-16 w-16"
+        width={20}
+        height={20}
+        className="h-20 w-20"
       />
     </Link>
   );
