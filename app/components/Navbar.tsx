@@ -64,9 +64,9 @@ function DesktopNav() {
           <Image
             src="/JKlogo.svg"
             alt="JeevaKrishna's Logo"
-            width={16}
-            height={16}
-            className="h-16 w-16"
+            width={10}
+            height={10}
+            className="h-10 w-10"
           />
         </Link>
       </div>
