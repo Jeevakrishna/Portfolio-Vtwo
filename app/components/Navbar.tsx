@@ -62,7 +62,7 @@ function DesktopNav() {
       <div className="left-4 w-[104px]">
         <Link href="/" aria-label="Home">
           <Image
-            src="/JKlogo.svg"
+            src="/jeeva.png"
             alt="JeevaKrishna's Logo"
             width={10}
             height={10}
