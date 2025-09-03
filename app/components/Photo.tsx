@@ -12,7 +12,9 @@ const MotionImage = motion(
     props: ImageProps,
     ref: Ref<HTMLImageElement>,
   ) {
-    return <Image ref={ref} {...props} />;
+    // Destructure alt from props to avoid passing it twice
+    const { alt = '', ...restProps } = props;
+    return <Image ref={ref} alt={alt} {...restProps} />;
   }),
 );
 type Direction = "left" | "right";
@@ -41,7 +43,7 @@ export const Photo = ({
     const randomRotation =
       getRandomNumberInRange(1, 4) * (direction === "left" ? -1 : 1);
     setRotation(randomRotation);
-  }, []);
+  }, [direction]);
 
   function handleMouse(event) {
     const rect = event.currentTarget.getBoundingClientRect();

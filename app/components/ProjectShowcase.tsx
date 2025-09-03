@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { BentoCard } from "./BentoCard";
 import Image from "next/image";
 import { softwareData } from "../data/toolboxProject";
+import { useRouter } from "next/navigation";
 
 type SoftwareItem = {
   title: string;
@@ -11,7 +12,8 @@ type SoftwareItem = {
   link: string;
 };
 
-export function ProjectShowcase({ linkTo }: { linkTo?: string }) {
+export function ProjectShowcase({ linkTo = "/projects" }: { linkTo?: string }) {
+  const router = useRouter();
   const [items, setItems] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
@@ -22,12 +24,12 @@ export function ProjectShowcase({ linkTo }: { linkTo?: string }) {
         .map((item, index) => (
           <div key={item.title} className="group inline-block text-center">
             <div
-              className={`rounded-[20px] border border-border-primary p-1.5 sm:p-2 transition-all duration-500 group-hover:border-indigo-400 ${
+              className={`rounded-[20px] border border-border-primary p-1.5 transition-all duration-500 group-hover:border-indigo-400 sm:p-2 ${
                 index === 2
-                  ? "w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-[130px] lg:h-[130px] delay-0 group-hover:-translate-y-3"
+                  ? "h-24 w-24 delay-0 group-hover:-translate-y-3 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-[130px] lg:w-[130px]"
                   : index === 1 || index === 3
-                    ? "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-[110px] lg:h-[110px] delay-100 group-hover:-translate-y-3"
-                    : "w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[110px] lg:h-[110px] delay-200 group-hover:-translate-y-3"
+                    ? "h-20 w-20 delay-100 group-hover:-translate-y-3 sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-[110px] lg:w-[110px]"
+                    : "h-16 w-16 delay-200 group-hover:-translate-y-3 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-[110px] lg:w-[110px]"
               }`}
             >
               <div
@@ -53,7 +55,11 @@ export function ProjectShowcase({ linkTo }: { linkTo?: string }) {
   }, []);
 
   return (
-    <BentoCard linkTo={linkTo} height="md:h-[304px] lg:h-[300px]">
+    <BentoCard
+      linkTo={linkTo}
+      height="md:h-[304px] lg:h-[300px]"
+      className="transition-opacity hover:opacity-90"
+    >
       <div className="group-hover:from-bg-white absolute inset-y-0 left-0 z-20 w-8 bg-gradient-to-r from-bg-primary to-transparent md:w-1/5"></div>
       <div className="group-hover:from-bg-white absolute inset-y-0 right-0 z-20 w-8 bg-gradient-to-l from-bg-primary to-transparent md:w-1/5"></div>
       <div className="z-20 text-center">
@@ -72,9 +78,9 @@ export function ProjectShowcase({ linkTo }: { linkTo?: string }) {
                 <div
                   key={i}
                   className={`animate-pulse rounded-[20px] bg-gray-200 ${
-                    i === 2 
-                      ? 'w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-[130px] lg:h-[130px]'
-                      : 'w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-[110px] lg:h-[110px]'
+                    i === 2
+                      ? "h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-[130px] lg:w-[130px]"
+                      : "h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-[110px] lg:w-[110px]"
                   }`}
                 />
               ))}

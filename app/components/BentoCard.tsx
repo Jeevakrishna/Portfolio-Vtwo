@@ -10,6 +10,7 @@ interface BentoCardProps {
   showHoverGradient?: boolean;
   hideOverflow?: boolean;
   linkTo?: string;
+  onClick?: () => void;
 }
 
 export function BentoCard({
@@ -21,16 +22,18 @@ export function BentoCard({
   showHoverGradient = true,
   hideOverflow = true,
   linkTo,
+  onClick,
 }: BentoCardProps) {
   const cardContent = (
     <div
       className={`group relative flex flex-col rounded-2xl border border-border-primary bg-bg-primary p-4 sm:p-5 md:p-6 hover:bg-white ${
         hideOverflow && "overflow-hidden"
-      } ${height} ${className}`}
+      } ${height} ${onClick ? 'cursor-pointer' : ''} ${className}`}
       style={{
         gridRow: `span ${rowSpan}`,
         gridColumn: `span ${colSpan}`,
       }}
+      onClick={onClick}
     >
       {linkTo && (
         <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 z-[999] flex h-8 w-8 sm:h-9 sm:w-9 rotate-6 items-center justify-center rounded-full bg-indigo-200 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-y-[-8px] group-hover:rotate-0 group-hover:opacity-100">

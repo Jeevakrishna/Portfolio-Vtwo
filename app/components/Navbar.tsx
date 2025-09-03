@@ -59,14 +59,17 @@ function DesktopNav() {
       aria-label="Desktop navigation"
       className="hidden h-16 w-full items-center justify-between border-b border-border-primary/50 px-4 md:flex"
     >
-      <div className="left-4 w-[104px]">
-        <Link href="/" aria-label="Home">
+      <div className="left-4 w-[64px]">
+        <Link href="/" aria-label="Home" className="block h-16 w-16">
           <Image
-            src="/jeeva.png"
+            src="/Navbar.png"
             alt="JeevaKrishna's Logo"
-            width={16}
-            height={16}
-            className="h-16 w-16"
+            width={64}
+            height={64}
+            className="h-full w-full object-contain"
+            priority
+            quality={100}
+            unoptimized={false}
           />
         </Link>
       </div>
@@ -155,13 +158,21 @@ interface NavLogoProps {
 
 const NavLogo: React.FC<NavLogoProps> = ({ onClickCallback }) => {
   return (
-    <Link href="/" onClick={() => onClickCallback(false)} aria-label="Home">
+    <Link
+      href="/"
+      onClick={() => onClickCallback(false)}
+      aria-label="Home"
+      className="block h-16 w-16"
+    >
       <Image
-        src="/jeeva.png"
+        src="/Navbar.png"
         alt="JeevaKrishna's Logo"
-        width={16}
-        height={16}
-        className="h-16 w-16"
+        width={64}
+        height={64}
+        className="h-full w-full object-contain"
+        priority
+        quality={100}
+        unoptimized={false}
       />
     </Link>
   );

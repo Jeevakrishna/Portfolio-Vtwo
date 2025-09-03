@@ -70,35 +70,52 @@ export const PhotoGallery = ({
     }),
   };
 
+  // Check if the screen is mobile (width <= 430px)
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 430);
+    };
+    
+    // Check on mount and add event listener for window resize
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Photo positions - horizontal layout with random y offsets
   const photos = [
     {
       id: 1,
       order: 0,
-      x: "-320px",
-      y: "15px",
+      x: isMobile ? "0px" : "-320px",
+      y: isMobile ? "0px" : "15px",
       zIndex: 50, // Highest z-index (on top)
       direction: "left" as Direction,
       src: "/Jeeva11.jpeg",
     },
-    {
-      id: 2,
-      order: 1,
-      x: "-160px",
-      y: "32px",
-      zIndex: 40,
-      direction: "left" as Direction,
-      src: "/Jeeva1.png",
-    },
-    {
-      id: 3,
-      order: 2,
-      x: "0px",
-      y: "8px",
-      zIndex: 30,
-      direction: "right" as Direction,
-      src: "/Jeevakrishna.jpg",
-    },
+    ...(isMobile ? [] : [
+      {
+        id: 2,
+        order: 1,
+        x: "-160px",
+        y: "32px",
+        zIndex: 40,
+        direction: "left" as Direction,
+        src: "/Jeeva1.png",
+      },
+      {
+        id: 3,
+        order: 2,
+        x: "0px",
+        y: "8px",
+        zIndex: 30,
+        direction: "right" as Direction,
+        src: "/Jeevakrishna.jpg",
+      },
+    ]),
     {
       id: 4,
       order: 3,
