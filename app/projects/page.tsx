@@ -11,6 +11,7 @@ interface Project {
   url: string;
   github?: string | string[];
   techStack: string[];
+  imageDimensions?: { width: number; height: number };
 }
 
 const projects: Project[] = [
@@ -18,9 +19,10 @@ const projects: Project[] = [
     title: "Switch",
     description:
       "Switch is a fast-paced, colorful game designed to keep you hooked. You control a bouncing ball, dodging and hitting blocks that constantly move around. Each collision scores points and ramps up the excitement. The gameplay is simple to learn, yet surprisingly challenging to master. It’s the kind of game you pick up for a minute — and end up playing for hours..",
-    image: "/projects/1switch.png",
+    image: "/projects/switch.png",
     url: "https://play.google.com/store/apps/details?id=com.VoltaVerseStudio.Switch",
     techStack: ["Unity", "C#", "2D Game Development", "Visual Studio"],
+    imageDimensions: { width: 1555, height: 850 },
   },
   {
     title: "BrainyBites",
@@ -155,7 +157,7 @@ export default function ProjectPage() {
                 customDimensions={
                   project.title === "Food-Focus AI"
                     ? { width: 936, height: 734 }
-                    : undefined
+                    : project.imageDimensions
                 }
               />
             </GridWrapper>
