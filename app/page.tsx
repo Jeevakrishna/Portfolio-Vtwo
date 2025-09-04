@@ -135,7 +135,7 @@ export default async function Home() {
               <SpeakingBento /> {/* Failure and Testimonals */}
               <IllustrationsBento />
               <div className="md:col-span-7 md:row-start-1 lg:col-span-5 lg:row-span-7">
-                <ProjectShowcase linkTo="/journey" />
+                <ProjectShowcase linkTo="/projects" />
               </div>
             </div>
           </GridWrapper>
