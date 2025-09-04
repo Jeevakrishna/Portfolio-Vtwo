@@ -73,7 +73,7 @@ export function Footer(): JSX.Element {
                 <div className="flex-grow space-y-6">
                   <Link className="inline-block" href="/">
                     <Image
-                      src="/JKlogo.svg"
+                      src="/Navbar.png"
                       alt="JeevaKrishna's Logo"
                       width={400}
                       height={400}
