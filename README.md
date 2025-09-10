@@ -28,7 +28,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 
 ### Backend & Data
 - **Supabase** - Backend-as-a-Service with Postgres database
-- **Velite** - Content management for Markdown and MDX
+
 
 ### UI Components & Styling
 - **Headless UI** - Unstyled, accessible UI components
@@ -39,7 +39,6 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 ### Development Tools
 - **ESLint** - JavaScript/TypeScript linter
 - **Prettier** - Code formatter
-- **Husky** - Git hooks
 - **Commitlint** - Lint commit messages
 
 ## 📁 Project Structure
@@ -71,7 +70,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/Jeevakrishna/Portfolio-Vtwo.git
    cd portfolio
    ```
 
@@ -138,8 +137,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📬 Contact
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- Website: [https://jeevakrishna.dev](https://jeevakrishna.dev)
+- Email: [jeevakrishna073@gmail.com](mailto:jeevakrishna073@gmail.com)
+- Website: [https://jeevakrishna-portfolio.vercel.app](https://jeevakrishna-portfolio.vercel.app)
 - Twitter: [@yourhandle](https://twitter.com/yourhandle)
 
 ## 🙏 Acknowledgments
@@ -148,3 +147,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 - [Supabase Documentation](https://supabase.com/docs)
+
