@@ -8,7 +8,7 @@
 
 Welcome to the source code of my personal portfolio website! This is a modern, performant, and interactive web application built with cutting-edge technologies to showcase my work, skills, and journey as a developer and designer.
 
-## 🚀 Features
+## Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Modern UI/UX**: Clean, accessible, and engaging user interface
@@ -17,7 +17,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 - **Blog Integration**: Markdown-based blog system
 - **Content Management**: Easy content updates through structured data
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Core
 - **Next.js 14** - React framework for server-rendered applications
@@ -41,7 +41,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 - **Prettier** - Code formatter
 - **Commitlint** - Lint commit messages
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -58,7 +58,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 └── ...
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -101,7 +101,7 @@ Welcome to the source code of my personal portfolio website! This is a modern, p
 
 5. **Open [http://localhost:3000](http://localhost:3000) in your browser**
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 npm run test
@@ -111,7 +111,7 @@ yarn test
 pnpm test
 ```
 
-## 🏗️ Building for Production
+## Building for Production
 
 ```bash
 npm run build
@@ -121,30 +121,23 @@ yarn build
 pnpm build
 ```
 
-## 🚀 Deployment
+## Deployment
 
 This project is configured to be deployed on [Vercel](https://vercel.com/), the creators of Next.js. You can also deploy it to other platforms that support Next.js applications.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2Fportfolio&project-name=portfolio&repository-name=portfolio)
 
-## 📖 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📬 Contact
+## Contact
 
 - Email: [jeevakrishna073@gmail.com](mailto:jeevakrishna073@gmail.com)
-- Website: [https://jeevakrishna-portfolio.vercel.app](https://jeevakrishna-portfolio.vercel.app)
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- Website: [https://jeevakrishna.vercel.app](https://jeevakrishna-portfolio.vercel.app)
+- X (Twitter): [@Jeevakrish73](https://x.com/Jeevakrish73)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 - [Supabase Documentation](https://supabase.com/docs)
+
 
