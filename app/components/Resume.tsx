@@ -6,7 +6,7 @@ const resumeData: ResumeData = {
   experiences: [
     {
       company: "Freelancer",
-      period: "April 2022 - Present",
+      period: "April 2022 - Jan 2026",
       // periodName: "#",
       positions: [
         {
@@ -55,7 +55,7 @@ const resumeData: ResumeData = {
     {
       company: "VoltaVerse Studio \n Indie Game Studio",
       //   periodName: "Indie Game Studio",
-      period: "March 2024 – Present",
+      period: "March 2024 – Feb 2026",
       positions: [
         {
           title: "Founder",
